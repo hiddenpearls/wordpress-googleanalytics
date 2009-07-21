@@ -3,7 +3,7 @@ Contributors: Kevin Sylvestre
 Tags: javascript, google, analytics
 Requires at least: 2.8
 Tested up to: 2.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 Enables google analytics on all pages.
 
