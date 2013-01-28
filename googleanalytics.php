@@ -3,7 +3,7 @@
 Plugin Name: Google Analytics
 Plugin URI: http://wordpress.org/extend/plugins/googleanalytics/
 Description: Enables <a href="http://www.google.com/analytics/">Google Analytics</a> on all pages.
-Version: 1.0.3
+Version: 1.0.4
 Author: Kevin Sylvestre
 Author URI: http://ksylvest.com/
 */
@@ -33,7 +33,7 @@ function admin_init_googleanalytics() {
 }
 
 function admin_menu_googleanalytics() {
-  add_options_page('Google Analytics', 'Google Analytics', 8, 'googleanalytics', 'options_page_googleanalytics');
+  add_options_page('Google Analytics', 'Google Analytics', 'manage_options', 'googleanalytics', 'options_page_googleanalytics');
 }
 
 function options_page_googleanalytics() {
@@ -94,7 +94,7 @@ if (is_admin()) {
 }
 
 if (!is_admin()) {
-	add_action('wp_footer', 'googleanalytics');
+  add_action('wp_footer', 'googleanalytics');
 }
 
 ?>
